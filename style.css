@@ -5,6 +5,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -70,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 55vh;
+    height: 75vh;
     max-width: 100%;
     width: 100%;
     background: coral;
@@ -593,25 +594,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .what {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100vh;
     width: 100%;
     top: 0;
     left: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .what .content .square{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     background: palevioletred;
     height: 100%;
     width: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .square .w-box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-height: 50vh;
     height: 50vh;
@@ -623,10 +637,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .square .w-box2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-height: 50vh;
     height: 50vh;
     width: 50vh;
@@ -659,6 +682,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .square .w-box3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-height: 50vh;
     height: 50vh;
@@ -667,10 +692,14 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
 }
 
 .square .w-box4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-height: 50vh;
     height: 50vh;
@@ -682,6 +711,90 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hor img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100vh;
+    width: 45.2%;
+    overflow: hidden;
+}
+
+.trd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 75vh;
+    max-width: 100%;
+    width: 100%;
+    background: coral;
+}
+
+.trd .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    font-weight: bolder;
+    background: #001730;
+    color: #fff;
+    top: 0;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px;
+}
+
+.trd .content .top-text {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 0.35rem;
+}
+
+.trd .content h2 {
+    font-size: 2.75rem;
+    letter-spacing: 0.25rem;
+    margin: 0;
+    width: 100%;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.trd .content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.trd .cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    background: url(https://images.unsplash.com/photo-1496266125541-6d5a799d0ac8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1960&q=80);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    color: #fff;
+    font-size: 200px;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 100px;
+    padding-top: 250px;
 }
