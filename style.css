@@ -129,14 +129,18 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
-.discipline {
+.discipline1 {
     display: flex;
     width: 100%;
-    height: 100vh;
-    background: red;
 }
 
-.discipline .box1 {
+.discipline1 .row1 {
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+}
+
+.discipline1 .row1 .box1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-.discipline .box1 .top-text {
+.discipline1 .box1 .top-text {
     font-family: 'Lora', serif;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -155,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.35rem;
 }
 
-.discipline .box1 .shape {
+.discipline1 .box1 .shape {
     width: 500px;
     height: 60px;
     background-image: none;
@@ -166,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     background-blend-mode: multiply;
 }
 
-.discipline .box1 h2 {
+.discipline1 .box1 h2 {
     position: relative;
     font-size: 3rem;
     letter-spacing: 0.25rem;
@@ -176,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 100;
 }
 
-.discipline .box1 p {
+.discipline1 .box1 p {
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.15rem;
@@ -184,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 25px;
 }
 
-.discipline .box1 .btn {
+.discipline1 .box1 .btn {
     padding: 15px 30px;
     border: 1px solid #fff;
     background: transparent;
@@ -192,13 +196,13 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-.discipline .box1 .btn a{
+.discipline1 .box1 .btn a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;
 }
 
-.discipline .box2 {
+.discipline1 .box2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-.discipline .box2 .top-text {
+.discipline1 .box2 .top-text {
     font-family: 'Lora', serif;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -219,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.35rem;
 }
 
-.discipline .box2 .shape {
+.discipline1 .box2 .shape {
     width: 500px;
     height: 65px;
     background-image: none;
@@ -230,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
     background-blend-mode: multiply;
 }
 
-.discipline .box2 h2 {
+.discipline1 .box2 h2 {
     position: relative;
     font-size: 3rem;
     letter-spacing: 0.25rem;
@@ -241,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #001730;
 }
 
-.discipline .box2 p {
+.discipline1 .box2 p {
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.15rem;
@@ -249,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 25px;
 }
 
-.discipline .box2 .btn {
+.discipline1 .box2 .btn {
     padding: 15px 30px;
     border: 1px solid #fff;
     background: transparent;
@@ -257,10 +261,148 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-.discipline .box2 .btn a{
+.discipline1 .box2 .btn a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;
 }
 
+.discipline2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
 
+.discipline2 .row2 {
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+}
+
+.discipline2 .row2 .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    padding: 50px;
+    background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(images/fineart.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    color: #fff;
+}
+
+.discipline2 .box3 .top-text {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1;
+    letter-spacing: 0.35rem;
+}
+
+.discipline2 .box3 .shape {
+    width: 500px;
+    height: 60px;
+    background-image: none;
+    background: #fff;
+    margin: 8px auto 0 -101px;
+    position: absolute;
+    z-index: 11;
+    background-blend-mode: multiply;
+}
+
+.discipline2 .box3 h2 {
+    position: relative;
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    margin: 0;
+    padding:8px;
+    width: 100%;
+    z-index: 100;
+    color: #001730;
+}
+
+.discipline2 .box3 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.discipline2 .box3 .btn {
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    background: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.discipline2 .box3 .btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.discipline2 .box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    padding: 50px;
+    background: #4ad7d1;
+    height: 50vh;
+    color: #fff;
+}
+
+.discipline2 .box4 .top-text {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1;
+    letter-spacing: 0.35rem;
+}
+
+.discipline2 .box4 .shape {
+    width: 500px;
+    height: 65px;
+    background-image: none;
+    background: #fe4a49;
+    margin: 8px auto 0 -50px;
+    position: absolute;
+    z-index: 11;
+    background-blend-mode: multiply;
+}
+
+.discipline2 .box4 h2 {
+    position: relative;
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    margin: 0;
+    padding:8px;
+    width: 100%;
+    z-index: 100;
+    color: #fff;
+}
+
+.discipline2 .box4 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.discipline2 .box4 .btn {
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    background: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.discipline2 .box4 .btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
