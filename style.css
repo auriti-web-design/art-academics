@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(135deg, #FF512F, #DD2476), url(images/girl1.jpg);
+    background-size:cover;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: flex-end;
+}
+
+.header .content {
+    padding: 100px;
+    max-width: 80%;
+    color: #fff;
+}
+
+.header .content .top-text {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0.35rem;
+}
+
+.header .content h1 {
+    font-size: 5rem;
+    letter-spacing: 0.25rem;
+    line-height: 1.2;
+}
+
+.header .content p {
+    width: 650px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
+}
+
+.fs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55vh;
+    max-width: 100%;
+    width: 100%;
+    background: coral;
+}
+
+.fs .num {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 10rem;
+    font-weight: bolder;
+    background: #001730;
+    color: #fff;
+    padding: 130px;
+}
+
+.fs .fs--content {
+    height: 100%;
+    width: 55%;
+    background: #4ad7d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #fff;
+}
+
+.fs .fs--content .top-text {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 0.35rem;
+}
+
+.fs .fs--content h2 {
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    line-height: 1.2;
+}
+
+.fs .fs--content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
+    padding-top: 10px;
+}
+
+.fs .fs--content .btn {
+    margin-top: 20px;
+    background: #fe4a49;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding:15px 30px;
+    cursor:pointer;
+}
+
+.fs  .fs--photo {
+    height: 100%;
+    max-width: 25%;
+    width: 25%;
+    background: url(images/boy1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+
