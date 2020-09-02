@@ -3,7 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -19,13 +20,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     height: 100vh;
     width: 100%;
+    background:-o-linear-gradient(315deg, #FF512F, #DD2476), url(images/girl1.jpg);
     background:linear-gradient(135deg, #FF512F, #DD2476), url(images/girl1.jpg);
     background-size:cover;
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .header .content {
@@ -56,9 +62,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 55vh;
     max-width: 100%;
     width: 100%;
@@ -66,10 +77,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fs .num {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 20%;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
     font-size: 10rem;
     font-weight: bolder;
@@ -82,9 +99,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     width: 55%;
     background: #4ad7d1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 30px;
     color: #fff;
 }
@@ -130,21 +153,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .discipline1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
 }
 
 .discipline1 .row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
     width: 100%;
 }
 
 .discipline1 .row1 .box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     padding: 50px;
     background: #fe4a49;
     height: 50vh;
@@ -192,6 +229,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 30px;
     border: 1px solid #fff;
     background: transparent;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -203,11 +242,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .discipline1 .box2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     padding: 50px;
+    background: -o-linear-gradient(315deg, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(images/design.jpg);
     background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(images/design.jpg);
     background-position: center;
     background-size: cover;
@@ -257,6 +304,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 30px;
     border: 1px solid #fff;
     background: transparent;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -268,23 +317,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .discipline2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .discipline2 .row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
     width: 100%;
 }
 
 .discipline2 .row2 .box3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     padding: 50px;
+    background: -o-linear-gradient(315deg, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(images/fineart.jpg);
     background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(images/fineart.jpg);
     background-position: center;
     background-size: cover;
@@ -334,6 +400,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 30px;
     border: 1px solid #fff;
     background: transparent;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -345,10 +413,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .discipline2 .box4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     padding: 50px;
     background: #4ad7d1;
     height: 50vh;
@@ -397,11 +472,121 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 30px;
     border: 1px solid #fff;
     background: transparent;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     cursor: pointer;
 }
 
 .discipline2 .box4 .btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 75vh;
+    width: 100%;
+    background: orange;
+}
+
+.two > .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    background: -o-linear-gradient(315deg, #34e89e, #0f344391), url(images/couple.jpg);
+    background: linear-gradient(135deg, #34e89e, #0f344391), url(images/couple.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.two .num {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+
+.two  .num p {
+    font-size: 200px;
+    color: #fff;
+    line-height: 2;
+}
+
+.two  .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    color: #fff;
+    max-width: 60%;
+    width: 60%;
+}
+
+.two .text > .top-text {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1;
+    letter-spacing: 0.35rem;
+}
+
+.two .text > h2 {
+    position: relative;
+    font-size: 2.75rem;
+    letter-spacing: 0.25rem;
+    margin: 0;
+    width: 100%;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.two .text > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.two .text > .btn {
+    padding: 15px 30px;
+    border: 1px solid #001730;
+    background: #001730;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.two .text > .btn a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;
